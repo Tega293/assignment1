@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: #1E2E13;
+}
+h1{
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+}
+nav ul{
+    background-color: #359BE8;
+    padding-right: 480px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding-left: 80%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 50px;
+    border: solid 2px black;
+    
+}
+button{
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #359BE8;
+}
+
+button:hover{
+    background-color: antiquewhite;
+    color: #359BE8;
+    transition: 0.5s;
+}
+
+#logo{
+    display: flex;
+    width: 12px;
+    height: 53px;
+    position: fixed;
+}
+
+#logo a{
+    text-decoration: none;
+    color: antiquewhite;
+   
+}
+
+
+#logo a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    transform: rotate(-45deg);
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.grid_container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.8fr;
+    grid-template-areas: "one two"
+                         "three four"
+                         "footer footer";
+    grid-gap: 0.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #359BE8;
+    text-align: center;
+
+}
+.third_sect h2{
+    padding-top: 6rem;
+    padding-left: 8rem;
+}
+.one{
+    grid-area: one;
+    border-radius: var(--main-radius);
+    padding-top: 5rem;
+    border-radius: 4%;
+    
+}
+
+.two{
+    grid-area: two;
+    border-radius: var(--main-radius);
+    padding-top: 5rem;
+}
+
+.three{
+    grid-area: three;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.four{
+    grid-area: four;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.footer{
+    background-color: blanchedalmond;
+    grid-area: footer;
+    padding-top: 5rem;
+    margin-left: 3px;
+    text-align: left;
+    
+    
+
+}
+@media screen and (max-width:500px) {
+    .grid_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr o.4fr;
+        grid-template-areas: "one"
+                             "two"
+                             "three"
+                             "four"
+                             "footer";
+}
+}
+
+
+
+#logo a{
+    text-decoration: none;
+    color: antiquewhite;
+   
+}
+
+
+#logo a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    transform: rotate(-45deg);
+    padding: 10px;
+    border-radius: 20%;
+}
